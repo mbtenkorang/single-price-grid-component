@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,700&display=swap');
+
+:root {
+  font-family: "Karla", Inter, sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-size: 16px;
+
+
+  color: rgba(255, 255, 255, 0.87);
+
+  --cyan: hsl(179, 62%, 43%);
+  --grayishblue: hsl(218, 22%, 67%);
+  --lightgray: hsl(204, 43%, 93%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --white: hsl(0, 96%, 100%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--lightgray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  border: var(--grayishblue);
+  border-radius: .57rem;
+  overflow: hidden;
+}
+
+
+h2 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+}
+
+p {
+  font-size: 1rem;
+}
+
+section {
+  padding: 2em 1.5em;
+}
+
+section:nth-child(1) {
+  background-color: var(--white);
+}
+
+section:nth-child(2) {
+  background-color: var(--cyan);
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-child(3) {
+  background-color: var(--cyan);
+  opacity: .7;
+  display: flex;
+  flex-direction: column;
+}
+
+.attribution {
+  font-size: .75rem;
+}
+
+@media only screen and (min-width:798px) {
+
+  #root {
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, [start]1fr);
+    width: 65%;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding-bottom: 0;
+  }
+
+  section:nth-child(1) {
+    grid-column: start/span 2;
+  }
+}
+
+@media only screen and (max-width:790px) {
+  section {
+    max-width: 21.5rem;
+  }
+}
