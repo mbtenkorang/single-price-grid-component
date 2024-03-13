@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { css } from "@emotion/react";
 
 const styles = css`
