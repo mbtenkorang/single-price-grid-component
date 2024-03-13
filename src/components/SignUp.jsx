@@ -10,8 +10,10 @@ const buttonCss = {
     fontWeight: "bold",
     borderRadius: " 0.25rem",
     marginTop: "2rem",
+    display: "block",
   }),
 };
+// eslint-disable-next-line react/prop-types
 export default function Button({ linkText = "Click" }) {
   return <a css={buttonCss.button}>{linkText}</a>;
 }
