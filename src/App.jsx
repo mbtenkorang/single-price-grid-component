@@ -26,7 +26,7 @@ Perfect for any developers who are serious about honing their skills.",
 
 function App() {
   return (
-    <main>
+    <article>
       <Join
         title={data.title}
         guarantee={data.guarantee}
@@ -43,7 +43,7 @@ function App() {
         cardTitle={data.faqTitle}
         reasons={data.faqReasons}
       />
-    </main>
+    </article>
   );
 }
 

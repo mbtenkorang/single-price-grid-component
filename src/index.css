@@ -31,7 +31,7 @@ body {
   justify-content: center;
 }
 
-main {
+article {
   border: var(--grayishblue);
   border-radius: .57rem;
   overflow: hidden;
@@ -48,11 +48,12 @@ p {
   font-size: 1rem;
 }
 
+header,
 section {
   padding: 2em 2em;
 }
 
-section:nth-child(1) {
+header {
   background-color: var(--white);
 }
 
@@ -68,6 +69,7 @@ section:nth-child(3) {
 
 .attribution {
   font-size: .75rem;
+  color: var(--bright-yellow);
 }
 
 @media only screen and (min-width:798px) {
@@ -77,7 +79,7 @@ section:nth-child(3) {
     justify-content: center;
   }
 
-  main {
+  article {
     display: grid;
     grid-template-columns: repeat(2, [start]1fr);
     width: 65%;
@@ -88,13 +90,14 @@ section:nth-child(3) {
     font-size: 1rem;
   }
 
+  header,
   section {
     padding-bottom: 0;
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
 
-  section:nth-child(1) {
+  header {
     grid-column: start/span 2;
     padding-bottom: 0;
   }
@@ -102,7 +105,9 @@ section:nth-child(3) {
 }
 
 @media only screen and (max-width:790px) {
+
+  header,
   section {
-    max-width: 21.5rem;
+    max-width: 21rem;
   }
 }

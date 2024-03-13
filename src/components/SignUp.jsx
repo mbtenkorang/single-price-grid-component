@@ -6,7 +6,7 @@ const buttonCss = {
     width: "100%",
     textAlign: "center",
     paddingTop: "1em",
-    paddingBottom: "0.8em",
+    paddingBottom: "1em",
     fontWeight: "bold",
     borderRadius: " 0.25rem",
     marginTop: "2rem",

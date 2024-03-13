@@ -2,8 +2,6 @@
 import { css } from "@emotion/react";
 
 const styles = css`
-  background-color: var(--light-gray);
-
   h1 {
     color: var(--cyan);
     font-size: 1.5rem;
@@ -29,10 +27,10 @@ const styles = css`
 
 export default function Join({ title = "", guarantee = "", fullText = "" }) {
   return (
-    <section css={styles}>
+    <header css={styles}>
       <h1>{title}</h1>
       <p>{guarantee}</p>
       <p className="text">{fullText}</p>
-    </section>
+    </header>
   );
 }
