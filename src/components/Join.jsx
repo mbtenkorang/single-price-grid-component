@@ -1,17 +1,21 @@
+/* eslint-disable react/prop-types */
 import { css } from "@emotion/react";
 
 const styles = css`
   background-color: var(--light-gray);
 
-  h2 {
+  h1 {
     color: var(--cyan);
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1em;
   }
 
   p {
     font-size: 0.9rem;
   }
 
-  h2 + p {
+  h1 + p {
     color: var(--bright-yellow);
     font-weight: 700;
     margin-bottom: 1rem;
@@ -21,20 +25,14 @@ const styles = css`
     color: var(--grayishblue);
     line-height: 2;
   }
-
-  @media only screen and (min-width: 850) {
-    p + p {
-      max-width: 80%;
-    }
-  }
 `;
 
 export default function Join({ title = "", guarantee = "", fullText = "" }) {
   return (
     <section css={styles}>
-      <h2>{title}</h2>
+      <h1>{title}</h1>
       <p>{guarantee}</p>
-      <p>{fullText}</p>
+      <p className="text">{fullText}</p>
     </section>
   );
 }
