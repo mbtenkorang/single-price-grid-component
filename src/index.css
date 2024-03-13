@@ -80,7 +80,7 @@ section:nth-child(3) {
   main {
     display: grid;
     grid-template-columns: repeat(2, [start]1fr);
-    max-width: 65%;
+    width: 65%;
     grid-template-rows: 1fr 1fr;
   }
 
