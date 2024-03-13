@@ -6,7 +6,7 @@ const styles = css`
 
   h1 {
     color: var(--cyan);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1em;
   }
