@@ -23,6 +23,12 @@ const styles = css`
     color: var(--grayishblue);
     line-height: 2;
   }
+
+  @media screen and (min-width: 798px) {
+    .text {
+      max-width: 88%;
+    }
+  }
 `;
 
 export default function Join({ title = "", guarantee = "", fullText = "" }) {
