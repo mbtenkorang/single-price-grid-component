@@ -11,6 +11,7 @@ const buttonCss = {
     borderRadius: " 0.25rem",
     marginTop: "2rem",
     display: "block",
+    cursor: "pointer",
   }),
 };
 // eslint-disable-next-line react/prop-types
