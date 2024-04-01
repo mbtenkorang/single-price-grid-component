@@ -74,7 +74,7 @@ section:nth-child(3) {
 
 @media only screen and (min-width:798px) {
 
-  #root {
+  #app {
     display: flex;
     justify-content: center;
   }
