@@ -21,7 +21,7 @@ const styles = css`
 
   p + p {
     color: var(--grayishblue);
-    line-height: 2;
+    line-height: 1.5;
   }
 
   @media screen and (min-width: 798px) {
